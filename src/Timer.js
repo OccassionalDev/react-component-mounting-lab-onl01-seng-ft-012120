@@ -12,6 +12,9 @@ class Timer extends Component {
     this.interval = setInterval(this.clockTick, 1000)
   }
   
+  componentWillUnmount() {
+    
+  }
 
   render() {
     const { time, color } = this.state;
